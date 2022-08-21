@@ -52,9 +52,10 @@ jobs:
       run: |
         git config --global user.email '${{ secrets.EMAIL }}'
         git config --global user.name gregPerlinLi
-        git add .
-        git commit -m "update new refresh_token" -i 1.txt
-        git commit -m "update new time_log" -i time.log
+        git add 1.txt
+        git commit -m "update new refresh_token" -a
+        git add time.log
+        git commit -m "update new time_log" -a
 #        git commit -m "update new refresh_token" -a
         
     - name: Push changes
