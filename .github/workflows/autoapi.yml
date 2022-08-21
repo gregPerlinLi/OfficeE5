@@ -53,9 +53,9 @@ jobs:
         git config --global user.email '${{ secrets.EMAIL }}'
         git config --global user.name gregPerlinLi
         git add 1.txt
-        git commit -m "update new refresh_token" -a
+        git commit -m "update new refresh_token"
         git add time.log
-        git commit -m "update new time_log" -a
+        git commit -m "update new time_log"
 #        git commit -m "update new refresh_token" -a
         
     - name: Push changes
